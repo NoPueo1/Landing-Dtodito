@@ -84,13 +84,13 @@ export default function Hero() {
           className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-10 text-xs sm:text-sm font-semibold text-gray-300"
         >
           <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#141a15] border border-[#233326]">
+            <CheckCircle2 className="w-4 h-4 text-[#22c55e]" /> Quillón · Delivery y Retiro
+          </span>
+          <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#141a15] border border-[#233326]">
             <CheckCircle2 className="w-4 h-4 text-[#22c55e]" /> Promos de 20 a 140 pzas
           </span>
           <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#141a15] border border-[#233326]">
             <Flame className="w-4 h-4 text-[#f97316]" /> Salchipapas &amp; Chorrillanas
-          </span>
-          <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#141a15] border border-[#233326]">
-            <CheckCircle2 className="w-4 h-4 text-[#22c55e]" /> Pedidos por WhatsApp
           </span>
         </motion.div>
 

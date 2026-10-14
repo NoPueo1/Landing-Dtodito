@@ -88,6 +88,16 @@ export default function CTASection() {
             <MessageCircle className="w-5 h-5 text-[#22c55e]" />
             <span>WhatsApp Directo</span>
           </a>
+
+          <a
+            href={siteConfig.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto flex items-center justify-center gap-2.5 bg-[#141d16] hover:bg-[#1c291f] border border-white/20 hover:border-[#22c55e] text-gray-200 hover:text-white font-bold text-base px-7 py-4 rounded-full transition-all duration-300 hover:scale-105"
+          >
+            <span className="text-[#22c55e] font-black text-sm">IG</span>
+            <span>{siteConfig.instagramHandle}</span>
+          </a>
         </motion.div>
       </div>
     </section>

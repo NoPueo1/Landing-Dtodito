@@ -84,16 +84,34 @@ export default function Footer() {
                   className="flex items-center gap-3 text-gray-300 hover:text-[#4ade80] transition-colors text-sm"
                 >
                   <MessageCircle className="w-4 h-4 text-[#22c55e] shrink-0" />
-                  <span>WhatsApp: +569 97541283</span>
+                  <span>WhatsApp: {siteConfig.phoneFormatted}</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={siteConfig.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-300 hover:text-[#4ade80] transition-colors text-sm"
+                >
+                  <span className="w-4 h-4 text-[#22c55e] font-black text-xs flex items-center justify-center">IG</span>
+                  <span>Instagram: {siteConfig.instagramHandle}</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={siteConfig.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-300 hover:text-[#4ade80] transition-colors text-sm"
+                >
+                  <span className="w-4 h-4 text-[#22c55e] font-black text-xs flex items-center justify-center">FB</span>
+                  <span>Facebook: {siteConfig.facebookName}</span>
                 </a>
               </li>
               <li className="flex items-center gap-3 text-gray-300 text-sm">
                 <MapPin className="w-4 h-4 text-[#22c55e] shrink-0" />
-                <span>Modalidad: Delivery y Retiro en local</span>
-              </li>
-              <li className="flex items-center gap-3 text-gray-300 text-sm">
-                <Clock className="w-4 h-4 text-[#22c55e] shrink-0" />
-                <span>{siteConfig.schedule}</span>
+                <span>{siteConfig.location} · Delivery y Retiro</span>
               </li>
             </ul>
           </div>

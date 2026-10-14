@@ -14,49 +14,49 @@ interface GalleryPhoto {
 
 const galleryPhotos: GalleryPhoto[] = [
   {
-    src: "/images/ramo-sushi.jpg",
+    src: "/images/ramo-de-sushi-regalo.jpg",
     alt: "Ramo de Sushi D'Toditos",
     title: "Ramo de Sushi para Regalo",
     tag: "Exclusivo",
   },
   {
-    src: "/images/sushi-burger.jpg",
+    src: "/images/sushi-burger-gigante-apanada.jpg",
     alt: "Sushi Burger D'Toditos",
     title: "Sushi Burger Doble Crujiente",
     tag: "Favorito",
   },
   {
-    src: "/images/salchipapas.jpg",
+    src: "/images/salchipapas-bajon-crujiente.jpg",
     alt: "Salchipapas con Papas Fritas",
     title: "Salchipapas y Bajones",
     tag: "Bajón",
   },
   {
-    src: "/images/fresas-con-crema.jpg",
+    src: "/images/fresas-con-crema-postre.jpg",
     alt: "Fresas con Crema D'Toditos",
     title: "Fresas con Crema Artesanal",
     tag: "Postres",
   },
   {
-    src: "/images/gohan-bowl.jpg",
+    src: "/images/gohan-bowl-flor-palta.jpg",
     alt: "Gohan Bowl D'Toditos",
     title: "Gohan Bowl con Flor de Palta",
     tag: "Bowls",
   },
   {
-    src: "/images/sushi-sin-arroz.jpg",
+    src: "/images/rolls-sin-arroz-keto-salmon.jpg",
     alt: "Roll Sin Arroz Keto",
     title: "Rolls Sin Arroz (Keto)",
     tag: "Sin Arroz",
   },
   {
-    src: "/images/promo-rolls.jpg",
+    src: "/images/tabla-sushi-promos-mixtas.jpg",
     alt: "Promociones Mixtas de Sushi",
     title: "Promos Mixtas de 20 a 140 Pzas",
     tag: "Promos",
   },
   {
-    src: "/images/tabla-sushi.jpg",
+    src: "/images/tabla-sushi-degustacion-familiar.jpg",
     alt: "Tablas de Sushi D'Toditos",
     title: "Armado de Tablas y Tortas",
     tag: "Celebración",
