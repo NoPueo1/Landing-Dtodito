@@ -33,7 +33,8 @@ body {
 }
 
 /* Neon stroke separator */
-.neon-line {
+.neon-line,
+.brush-line {
   height: 2px;
   background: linear-gradient(90deg, transparent, var(--green), transparent);
 }

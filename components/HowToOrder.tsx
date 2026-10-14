@@ -2,36 +2,29 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Utensils, ShoppingBag, MessageCircle, Bike } from "lucide-react";
+import { BookOpen, MessageCircle, Sparkles } from "lucide-react";
 
 const steps = [
   {
     step: "01",
-    icon: Utensils,
-    title: "Elige tus favoritos",
+    icon: BookOpen,
+    title: "Elige tu promo o bajón",
     description:
-      "Explora la carta y agrega tus promociones, sushi burgers, rolls sin arroz o salchipapas al carrito.",
+      "Revisa el menú interactivo, selecciona tus rolls o bajones favoritos y agrégalos al carrito.",
   },
   {
     step: "02",
-    icon: ShoppingBag,
-    title: "Revisa tu pedido",
+    icon: MessageCircle,
+    title: "Escríbenos",
     description:
-      "Ajusta cantidades, elige si prefieres Delivery o Retiro en local, e ingresa notas especiales.",
+      "Confirma tu pedido directamente a nuestro WhatsApp con el detalle listo.",
   },
   {
     step: "03",
-    icon: MessageCircle,
-    title: "Envía a WhatsApp",
+    icon: Sparkles,
+    title: "¡A disfrutar!",
     description:
-      "Tu pedido se autocompila en un mensaje claro y ordenado listo para enviar a nuestro WhatsApp.",
-  },
-  {
-    step: "04",
-    icon: Bike,
-    title: "¡Recibe y disfruta!",
-    description:
-      "Preparamos todo al instante con ingredientes frescos y te lo entregamos rápido.",
+      "Preparamos tu sushi al momento con ingredientes frescos y te lo llevamos directo a tu puerta.",
   },
 ];
 
@@ -40,53 +33,50 @@ export default function HowToOrder() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="como-pedir" ref={ref} className="py-24 px-6 bg-[#080a08] relative">
-      <div className="max-w-6xl mx-auto">
+    <section id="como-pedir" ref={ref} className="py-24 px-6 bg-[#0d0d0d]">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-[#22c55e] text-xs tracking-[0.25em] uppercase font-black mb-3">
-            Simple y al grano
+          <p className="text-[#22c55e] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
+            Simple y rápido
           </p>
-          <h2 className="text-4xl sm:text-5xl font-black mb-3">¿Cómo Pedir?</h2>
-          <p className="text-gray-400 text-sm sm:text-base max-w-md mx-auto">
-            Sin formularios engorrosos ni registros largos. En 4 pasos tu comida va en camino.
-          </p>
-          <div className="neon-line w-24 mx-auto mt-5" />
+          <h2 className="text-4xl sm:text-5xl font-black mb-4">
+            ¿Cómo pedir?
+          </h2>
+          <div className="neon-line w-24 mx-auto" />
         </motion.div>
 
-        {/* Steps Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Steps */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((s, i) => {
             const Icon = s.icon;
             return (
               <motion.div
                 key={s.step}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: i * 0.12, duration: 0.5 }}
-                className="relative text-center p-6 rounded-2xl bg-[#111613] border border-[#1e2821] hover:border-[#22c55e]/50 transition-colors group card-glow flex flex-col justify-between"
+                transition={{ delay: i * 0.15, duration: 0.6 }}
+                className="relative text-center p-6 rounded-2xl bg-[#141414] border border-[#242424] hover:border-[#22c55e]/40 transition-colors"
               >
-                <div>
-                  {/* Step icon */}
-                  <div className="relative inline-block mb-5">
-                    <div className="w-16 h-16 rounded-2xl bg-[#162118] border border-[#233526] flex items-center justify-center text-[#22c55e] mx-auto group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-7 h-7 stroke-[2.2]" />
-                    </div>
-                    <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-[#22c55e] text-black text-xs font-black flex items-center justify-center shadow-lg shadow-green-600/40">
-                      {i + 1}
-                    </span>
+                {/* Step number indicator */}
+                <div className="relative inline-block mb-5">
+                  <div className="w-16 h-16 rounded-full bg-[#1c1c1c] border border-[#2a2a2a] flex items-center justify-center text-[#22c55e] mx-auto shadow-inner">
+                    <Icon className="w-7 h-7" />
                   </div>
-
-                  <h3 className="font-extrabold text-lg mb-2 text-white">{s.title}</h3>
-                  <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                    {s.description}
-                  </p>
+                  <span className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-[#22c55e] text-black text-xs font-bold flex items-center justify-center shadow">
+                    {i + 1}
+                  </span>
                 </div>
+
+                <h3 className="font-black text-xl mb-3 text-white">{s.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {s.description}
+                </p>
               </motion.div>
             );
           })}

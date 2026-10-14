@@ -1,81 +1,56 @@
 import Image from "next/image";
-import { MessageCircle, MapPin, Clock, Phone, Heart } from "lucide-react";
-import { siteConfig } from "@/data/siteConfig";
+import { MessageCircle, MapPin, Clock } from "lucide-react";
 import InstagramIcon from "@/components/icons/InstagramIcon";
 import FacebookIcon from "@/components/icons/FacebookIcon";
+import { siteConfig } from "@/data/siteConfig";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#060807] border-t border-[#1a231d] py-16 px-6">
+    <footer className="bg-[#080808] border-t border-[#1a1a1a] py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border border-[#22c55e]">
-                <Image
-                  src="/images/logo.jpg"
-                  alt={siteConfig.name}
-                  fill
-                  className="object-cover"
-                  sizes="48px"
-                />
-              </div>
+              <Image
+                src="/images/logo.jpg"
+                alt="D'Toditos Sushi"
+                width={50}
+                height={50}
+                className="rounded-full border border-green-500/20"
+              />
               <div>
-                <div className="font-black text-lg text-white">D&apos;Toditos Sushi</div>
-                <div className="text-[#22c55e] text-xs font-bold tracking-widest uppercase">
-                  Sushi &amp; Bajón
+                <div className="font-black text-lg">D&apos;Toditos Sushi</div>
+                <div className="text-[#22c55e] text-xs tracking-widest uppercase">
+                  SABOR Y BAJÓN
                 </div>
               </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-              Las mejores combinaciones de sushi, sushi burgers crujientes, salchipapas, gohan y tortas para tus juntas. Hecho al instante con amor y sabor.
+            <p className="text-gray-500 text-sm leading-relaxed">
+              El mejor sushi y bajón de Quillón. Rolls frescos, sushi burgers,
+              salchipapas y promos gigantes para compartir.
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Links */}
           <div>
-            <h4 className="font-extrabold text-white mb-4 text-sm tracking-wider uppercase">
-              Categorías
+            <h4 className="font-bold text-white mb-4 text-sm tracking-wider uppercase">
+              Menú
             </h4>
-            <ul className="space-y-2 text-gray-400 text-sm">
-              <li>
-                <a href="#menu" className="hover:text-[#4ade80] transition-colors">
-                  Promociones de Sushi (20 a 140 pzas)
-                </a>
-              </li>
-              <li>
-                <a href="#menu" className="hover:text-[#4ade80] transition-colors">
-                  Sushi Burgers &amp; Rolls Sin Arroz
-                </a>
-              </li>
-              <li>
-                <a href="#menu" className="hover:text-[#4ade80] transition-colors">
-                  Tortas de Sushi &amp; Ramos Especiales
-                </a>
-              </li>
-              <li>
-                <a href="#menu" className="hover:text-[#4ade80] transition-colors">
-                  Salchipapas, Chorrillanas &amp; Papas
-                </a>
-              </li>
-              <li>
-                <a href="#menu" className="hover:text-[#4ade80] transition-colors">
-                  Hamburguesas, Churrascos &amp; Arepas
-                </a>
-              </li>
-              <li>
-                <a href="#menu" className="hover:text-[#4ade80] transition-colors">
-                  Fresas con Crema Artesanal
-                </a>
-              </li>
+            <ul className="space-y-2.5 text-gray-400 text-sm">
+              <li><a href="#menu" className="hover:text-white transition-colors">Promos de Sushi</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Sushi Burgers &amp; Keto</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Gohan Bowls</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Tortas &amp; Ramos</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Salchipapas &amp; Bajones</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Fresas con Crema</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-extrabold text-white mb-4 text-sm tracking-wider uppercase">
-              Contacto y Pedidos
+            <h4 className="font-bold text-white mb-4 text-sm tracking-wider uppercase">
+              Contacto
             </h4>
             <ul className="space-y-3">
               <li>
@@ -83,10 +58,10 @@ export default function Footer() {
                   href={siteConfig.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-300 hover:text-[#4ade80] transition-colors text-sm"
+                  className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   <MessageCircle className="w-4 h-4 text-[#22c55e] shrink-0" />
-                  <span>WhatsApp: {siteConfig.phoneFormatted}</span>
+                  WhatsApp — {siteConfig.phoneFormatted}
                 </a>
               </li>
               <li>
@@ -94,10 +69,10 @@ export default function Footer() {
                   href={siteConfig.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-300 hover:text-[#4ade80] transition-colors text-sm"
+                  className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   <InstagramIcon className="w-4 h-4 text-[#22c55e] shrink-0" />
-                  <span>Instagram: {siteConfig.instagramHandle}</span>
+                  {siteConfig.instagramHandle}
                 </a>
               </li>
               <li>
@@ -105,25 +80,31 @@ export default function Footer() {
                   href={siteConfig.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-300 hover:text-[#4ade80] transition-colors text-sm"
+                  className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   <FacebookIcon className="w-4 h-4 text-[#22c55e] shrink-0" />
-                  <span>Facebook: {siteConfig.facebookName}</span>
+                  {siteConfig.facebookHandle}
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-gray-300 text-sm">
+              <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 text-[#22c55e] shrink-0" />
-                <span>{siteConfig.location} · Delivery y Retiro</span>
+                {siteConfig.location} · Delivery y Retiro
+              </li>
+              <li className="flex items-center gap-3 text-gray-400 text-sm">
+                <Clock className="w-4 h-4 text-[#22c55e] shrink-0" />
+                {siteConfig.schedule}
               </li>
             </ul>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-[#17201a] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
-          <p>© {new Date().getFullYear()} D&apos;Toditos Sushi — Todos los derechos reservados.</p>
-          <p className="flex items-center gap-1.5">
-            Pide online y disfruta directo en tu puerta <Heart className="w-3.5 h-3.5 text-[#22c55e] fill-[#22c55e]" />
+        <div className="border-t border-[#1a1a1a] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-gray-600 text-sm">
+            © {new Date().getFullYear()} D&apos;Toditos Sushi — Quillón, Chile
+          </p>
+          <p className="text-gray-600 text-xs">
+            Hecho con cariño y mucho sabor
           </p>
         </div>
       </div>

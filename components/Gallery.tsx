@@ -3,125 +3,70 @@
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import Image from "next/image";
-import { X, ZoomIn, Sparkles } from "lucide-react";
+import { X } from "lucide-react";
 
-interface GalleryPhoto {
+interface GalleryItem {
   src: string;
   alt: string;
-  title: string;
-  tag: string;
+  label: string;
 }
 
-const galleryPhotos: GalleryPhoto[] = [
-  {
-    src: "/images/ramo-sushi.jpg",
-    alt: "Ramo de Sushi D'Toditos",
-    title: "Ramo de Sushi para Regalo",
-    tag: "Exclusivo",
-  },
-  {
-    src: "/images/sushi-burger.jpg",
-    alt: "Sushi Burger D'Toditos",
-    title: "Sushi Burger Doble Crujiente",
-    tag: "Favorito",
-  },
-  {
-    src: "/images/salchipapas.jpg",
-    alt: "Salchipapas con Papas Fritas",
-    title: "Salchipapas y Bajones",
-    tag: "Bajón",
-  },
-  {
-    src: "/images/fresas-con-crema.jpg",
-    alt: "Fresas con Crema D'Toditos",
-    title: "Fresas con Crema Artesanal",
-    tag: "Postres",
-  },
-  {
-    src: "/images/gohan-bowl.jpg",
-    alt: "Gohan Bowl D'Toditos",
-    title: "Gohan Bowl con Flor de Palta",
-    tag: "Bowls",
-  },
-  {
-    src: "/images/rolls-sin-arroz.jpg",
-    alt: "Roll Sin Arroz Keto",
-    title: "Rolls Sin Arroz (Keto)",
-    tag: "Sin Arroz",
-  },
-  {
-    src: "/images/promo-rolls.jpg",
-    alt: "Promociones Mixtas de Sushi",
-    title: "Promos Mixtas de 20 a 140 Pzas",
-    tag: "Promos",
-  },
-  {
-    src: "/images/tabla-sushi.jpg",
-    alt: "Tablas de Sushi D'Toditos",
-    title: "Armado de Tablas y Tortas",
-    tag: "Celebración",
-  },
+const galleryItems: GalleryItem[] = [
+  { src: "/images/ramo-sushi.jpg", alt: "Ramo de Sushi D'Toditos", label: "Ramo de sushi personalizado" },
+  { src: "/images/sushi-burger.jpg", alt: "Sushi Burger D'Toditos", label: "Sushi burger crujiente" },
+  { src: "/images/salchipapas.jpg", alt: "Salchipapas D'Toditos", label: "Salchipapas y bajones" },
+  { src: "/images/fresas-con-crema.jpg", alt: "Fresas con Crema D'Toditos", label: "Fresas con crema artesanal" },
+  { src: "/images/gohan-bowl.jpg", alt: "Gohan Bowl D'Toditos", label: "Gohan bowl con palta" },
+  { src: "/images/rolls-sin-arroz.jpg", alt: "Rolls Sin Arroz Keto", label: "Rolls keto sin arroz" },
+  { src: "/images/promo-rolls.jpg", alt: "Promociones de Sushi", label: "Promos para compartir" },
+  { src: "/images/tabla-sushi.jpg", alt: "Tablas de Sushi D'Toditos", label: "Tablas y eventos especiales" },
 ];
 
 export default function Gallery() {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-60px" });
+  const inView = useInView(ref, { once: true, margin: "-80px" });
   const [selected, setSelected] = useState<number | null>(null);
-
-  const currentPhoto = selected !== null ? galleryPhotos[selected] : null;
+  const selectedItem = selected !== null ? galleryItems[selected] : null;
 
   return (
-    <section id="galeria" ref={ref} className="py-24 px-6 bg-[#0a0c0a] relative">
+    <section id="galeria" ref={ref} className="py-24 px-6 bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
           className="text-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#121c14] border border-[#22c55e]/30 text-[#4ade80] text-xs font-bold uppercase tracking-wider mb-3">
-            <Sparkles className="w-3.5 h-3.5 text-[#22c55e]" />
-            Fotos Reales de Nuestros Platos
-          </div>
-          <h2 className="text-4xl sm:text-5xl font-black mb-3">Galería D&apos;Toditos</h2>
-          <p className="text-gray-400 text-sm sm:text-base max-w-lg mx-auto">
-            Así preparamos y entregamos cada uno de tus pedidos. Sin filtros, puro sabor.
+          <p className="text-[#22c55e] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
+            Visual
           </p>
-          <div className="neon-line w-28 mx-auto mt-5" />
+          <h2 className="text-4xl sm:text-5xl font-black mb-4">La experiencia</h2>
+          <div className="neon-line w-24 mx-auto" />
         </motion.div>
 
-        {/* Responsive Grid */}
+        {/* Grid 4 columnas balanceado — 8 fotos */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {galleryPhotos.map((photo, i) => (
+          {galleryItems.map((item, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 25 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: i * 0.05, duration: 0.45 }}
+              transition={{ delay: i * 0.07, duration: 0.5 }}
             >
               <div
                 onClick={() => setSelected(i)}
-                className="group relative rounded-2xl overflow-hidden aspect-square bg-[#121613] border border-[#1e2720] hover:border-[#22c55e]/60 transition-all duration-300 cursor-pointer shadow-lg"
+                className="relative rounded-2xl overflow-hidden aspect-square cursor-pointer group bg-[#141414] border border-[#242424] hover:border-[#22c55e]/50 transition-colors"
               >
                 <Image
-                  src={photo.src}
-                  alt={photo.alt}
+                  src={item.src}
+                  alt={item.alt}
                   fill
-                  className="object-cover group-hover:scale-108 transition-transform duration-500"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 />
-
-                {/* Hover Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                  <span className="text-[10px] font-black uppercase text-[#4ade80] tracking-wider mb-0.5">
-                    {photo.tag}
-                  </span>
-                  <h4 className="text-xs sm:text-sm font-bold text-white leading-snug">
-                    {photo.title}
-                  </h4>
-                  <div className="absolute top-3 right-3 w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-white">
-                    <ZoomIn className="w-3.5 h-3.5" />
-                  </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-white font-bold text-xs">{item.label}</span>
                 </div>
               </div>
             </motion.div>
@@ -131,54 +76,37 @@ export default function Gallery() {
 
       {/* Lightbox Modal */}
       <AnimatePresence>
-        {selected !== null && currentPhoto && (
+        {selectedItem && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setSelected(null)}
-            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
+            className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-6"
           >
+            <button
+              onClick={() => setSelected(null)}
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-10 cursor-pointer"
+            >
+              <X className="w-8 h-8" />
+            </button>
             <motion.div
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              className="relative w-full max-w-3xl"
               onClick={(e) => e.stopPropagation()}
-              className="relative max-w-2xl w-full bg-[#111713] rounded-3xl overflow-hidden border border-[#22c55e]/30 shadow-2xl"
             >
-              <button
-                onClick={() => setSelected(null)}
-                className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-black/70 hover:bg-black text-white flex items-center justify-center transition-colors cursor-pointer"
-              >
-                <X className="w-5 h-5" />
-              </button>
-
-              <div className="relative aspect-square sm:aspect-[4/3] w-full">
+              <div className="relative aspect-square w-full max-w-2xl mx-auto">
                 <Image
-                  src={currentPhoto.src}
-                  alt={currentPhoto.alt}
+                  src={selectedItem.src}
+                  alt={selectedItem.alt}
                   fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-contain rounded-2xl"
                 />
               </div>
-
-              <div className="p-5 sm:p-6 bg-[#0e1310] border-t border-[#1e2720] flex items-center justify-between">
-                <div>
-                  <span className="text-xs font-black uppercase text-[#4ade80] tracking-wider block mb-1">
-                    {currentPhoto.tag}
-                  </span>
-                  <h3 className="text-lg sm:text-xl font-black text-white">
-                    {currentPhoto.title}
-                  </h3>
-                </div>
-                <button
-                  onClick={() => setSelected(null)}
-                  className="px-4 py-2 rounded-xl bg-[#1c261f] hover:bg-[#253329] text-xs font-bold text-gray-200 transition-colors cursor-pointer"
-                >
-                  Cerrar
-                </button>
-              </div>
+              <p className="text-center text-gray-400 mt-4 text-sm">{selectedItem.label}</p>
             </motion.div>
           </motion.div>
         )}
