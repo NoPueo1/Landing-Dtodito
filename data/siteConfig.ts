@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "D'Toditos Sushi",
-  tagline: "Sushi, Bajón y Sabor",
+  tagline: "Sushi & Comida Rápida",
   location: "Quillón",
   phone: "56997541283",
   phoneFormatted: "+56 9 9754 1283",

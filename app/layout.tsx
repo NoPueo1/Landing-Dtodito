@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: `${siteConfig.name} — ${siteConfig.tagline} | Delivery & Retiro`,
   description:
-    "Las mejores promociones de sushi, sushi burgers, rolls sin arroz keto, tortas de sushi, salchipapas y comida rápida. Haz tu pedido directo por WhatsApp.",
+    "Promociones de sushi, sushi burgers, rolls, tortas de sushi, salchipapas y comida rápida en Quillón. Pedidos por WhatsApp.",
   keywords: [
     "D'Toditos Sushi",
     "delivery sushi",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: "Sushi fresco, rolls crujientes, bajón y promociones irresistibles. Pide directo por WhatsApp.",
+    description: "Sushi fresco, rolls, comida rápida y promociones en Quillón. Pide directo por WhatsApp.",
     locale: "es_CL",
     type: "website",
   },

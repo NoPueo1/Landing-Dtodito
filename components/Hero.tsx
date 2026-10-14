@@ -8,7 +8,7 @@ import { MessageCircle, UtensilsCrossed } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0d0d0d] px-6">
-      {/* ── BACKGROUND IMAGE OVERLAY ── */}
+      {/* Background image overlay */}
       <div className="absolute inset-0 z-0 bg-[#0d0d0d]">
         <Image
           src="/images/tabla-sushi.jpg"
@@ -17,7 +17,6 @@ export default function Hero() {
           priority
           className="object-cover opacity-20 filter blur-xs"
         />
-        {/* Dark gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#0d0d0d]" />
       </div>
 
@@ -25,7 +24,7 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-green-700/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-green-600/10 blur-3xl pointer-events-none" />
 
-      {/* ── CONTENT ── */}
+      {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-2xl mx-auto pt-16">
         {/* Logo */}
         <motion.div
