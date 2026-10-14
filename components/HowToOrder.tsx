@@ -8,9 +8,9 @@ const steps = [
   {
     step: "01",
     icon: BookOpen,
-    title: "Elige tu promo o bajón",
+    title: "Elige tu pedido",
     description:
-      "Revisa el menú interactivo, selecciona tus rolls o bajones favoritos y agrégalos al carrito.",
+      "Revisa el menú, selecciona tus promociones, rolls o extras y agrégalos al carrito.",
   },
   {
     step: "02",

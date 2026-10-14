@@ -59,7 +59,7 @@ export default function CTASection() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="text-gray-400 text-xl mb-10"
         >
-          Sushi y bajón de calidad, delivery rápido directo en Quillón.
+          Sushi y comida rápida, delivery directo en Quillón.
         </motion.p>
 
         <motion.div

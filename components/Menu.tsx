@@ -51,16 +51,16 @@ export default function Menu() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-4 mb-10 no-scrollbar"
+          className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-4xl mx-auto mb-12 px-2"
         >
           {menuData.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActive(cat.id)}
-              className={`px-5 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all duration-300 border shrink-0 cursor-pointer ${
+              className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wide transition-all duration-300 border cursor-pointer ${
                 active === cat.id
                   ? "bg-[#22c55e] border-[#22c55e] text-black shadow-lg shadow-green-900/30 scale-105"
-                  : "bg-[#141414] border-[#262626] text-gray-400 hover:border-[#22c55e]/50 hover:text-white"
+                  : "bg-[#141414] border-[#262626] text-gray-400 hover:border-[#22c55e]/50 hover:text-white hover:bg-[#1a1a1a]"
               }`}
             >
               {cat.label}

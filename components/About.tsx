@@ -10,7 +10,7 @@ const badges = [
   { label: "Delivery Quillón" },
   { label: "Rolls al momento" },
   { label: "Sushi Burgers" },
-  { label: "Salchipapas & Bajón" },
+  { label: "Salchipapas & Extras" },
 ];
 
 export default function About() {
@@ -51,21 +51,20 @@ export default function About() {
         >
           {/* Section label */}
           <p className="text-[#22c55e] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
-            Nuestra historia
+            Nosotros
           </p>
 
           <h2 className="text-4xl sm:text-5xl font-black mb-6 leading-tight">
-            Sushi y bajón
+            Sushi y comida rápida
             <br />
             <span className="text-[#22c55e]">en Quillón</span>
           </h2>
 
           <p className="text-gray-400 text-lg leading-relaxed mb-8">
-            Somos <strong className="text-white">D&apos;Toditos Sushi</strong>, un
-            equipo de Quillón que combina el mejor sushi fresco con el bajón más
-            contundente. Rolls elaborados con ingredientes de primera, sushi burgers
-            apanadas, salchipapas crujientes y promos armadas para compartir. Sin
-            vueltas — buen sushi, buen precio, directo en tu puerta.
+            Somos <strong className="text-white">D&apos;Toditos Sushi</strong> en Quillón.
+            Preparamos sushi fresco y comida rápida: rolls hechos al momento,
+            sushi burgers, salchipapas, chorrillanas y promociones familiares para
+            compartir. Sin rodeos: buenas porciones, buenos ingredientes y directo a tu puerta.
           </p>
 
           {/* Badges */}

@@ -22,13 +22,13 @@ export default function Footer() {
               <div>
                 <div className="font-black text-lg">D&apos;Toditos Sushi</div>
                 <div className="text-[#22c55e] text-xs tracking-widest uppercase">
-                  SABOR Y BAJÓN
+                  SUSHI &amp; COMIDA RÁPIDA
                 </div>
               </div>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">
-              El mejor sushi y bajón de Quillón. Rolls frescos, sushi burgers,
-              salchipapas y promos gigantes para compartir.
+              Sushi y comida rápida en Quillón. Rolls frescos, sushi burgers,
+              salchipapas, chorrillanas y promociones para compartir.
             </p>
           </div>
 
@@ -39,11 +39,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-gray-400 text-sm">
               <li><a href="#menu" className="hover:text-white transition-colors">Promos de Sushi</a></li>
-              <li><a href="#menu" className="hover:text-white transition-colors">Sushi Burgers &amp; Keto</a></li>
-              <li><a href="#menu" className="hover:text-white transition-colors">Gohan Bowls</a></li>
-              <li><a href="#menu" className="hover:text-white transition-colors">Tortas &amp; Ramos</a></li>
-              <li><a href="#menu" className="hover:text-white transition-colors">Salchipapas &amp; Bajones</a></li>
-              <li><a href="#menu" className="hover:text-white transition-colors">Fresas con Crema</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Sushi Burgers</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Rolls &amp; Gohan</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Tortas &amp; Especiales</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Salchipapas &amp; Chorrillanas</a></li>
+              <li><a href="#menu" className="hover:text-white transition-colors">Hamburguesas &amp; Extras</a></li>
             </ul>
           </div>
 
