@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { MessageCircle, MapPin, Clock, Phone, Heart } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
+import InstagramIcon from "@/components/icons/InstagramIcon";
+import FacebookIcon from "@/components/icons/FacebookIcon";
 
 export default function Footer() {
   return (
@@ -94,7 +96,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-300 hover:text-[#4ade80] transition-colors text-sm"
                 >
-                  <span className="w-4 h-4 text-[#22c55e] font-black text-xs flex items-center justify-center">IG</span>
+                  <InstagramIcon className="w-4 h-4 text-[#22c55e] shrink-0" />
                   <span>Instagram: {siteConfig.instagramHandle}</span>
                 </a>
               </li>
@@ -105,7 +107,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-300 hover:text-[#4ade80] transition-colors text-sm"
                 >
-                  <span className="w-4 h-4 text-[#22c55e] font-black text-xs flex items-center justify-center">FB</span>
+                  <FacebookIcon className="w-4 h-4 text-[#22c55e] shrink-0" />
                   <span>Facebook: {siteConfig.facebookName}</span>
                 </a>
               </li>

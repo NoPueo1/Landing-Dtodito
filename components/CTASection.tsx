@@ -5,6 +5,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { MessageCircle, ShoppingBag, Sparkles } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
+import InstagramIcon from "@/components/icons/InstagramIcon";
 
 export default function CTASection() {
   const ref = useRef(null);
@@ -95,7 +96,7 @@ export default function CTASection() {
             rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center gap-2.5 bg-[#141d16] hover:bg-[#1c291f] border border-white/20 hover:border-[#22c55e] text-gray-200 hover:text-white font-bold text-base px-7 py-4 rounded-full transition-all duration-300 hover:scale-105"
           >
-            <span className="text-[#22c55e] font-black text-sm">IG</span>
+            <InstagramIcon className="w-5 h-5 text-[#22c55e]" />
             <span>{siteConfig.instagramHandle}</span>
           </a>
         </motion.div>
