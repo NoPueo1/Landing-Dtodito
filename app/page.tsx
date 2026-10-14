@@ -10,7 +10,7 @@ import Cart from "@/components/Cart";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0a0c0a] text-white selection:bg-[#22c55e] selection:text-black">
+    <main className="min-h-screen bg-[#0a0c0a] text-white selection:bg-[#16a34a] selection:text-white">
       <Navbar />
       <Hero />
       <About />

@@ -47,5 +47,15 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la 
 ## ⚙️ Modificar datos
 
 - **Menú y precios:** [`data/menu.ts`](./data/menu.ts)
-- **Teléfono y redes:** [`data/siteConfig.ts`](./data/siteConfig.ts)
-- **Fotos:** [`public/images/`](./public/images/)
+- **Teléfono, redes, mapa y horarios:** [`data/siteConfig.ts`](./data/siteConfig.ts)
+- **Fotos de la galería:** [`public/images/`](./public/images/)
+
+---
+
+## ☁️ Despliegue en Vercel (Gratis)
+
+1. Sube este repositorio a GitHub.
+2. Ingresa a [vercel.com](https://vercel.com) e inicia sesión con GitHub.
+3. Haz clic en **Add New Project** e importa `Landing-Dtodito`.
+4. Deja la configuración por defecto y haz clic en **Deploy**.
+5. *(Opcional)* En **Settings > Domains**, agrega tu dominio `.cl` (ej: `dtoditosquillon.cl`).
