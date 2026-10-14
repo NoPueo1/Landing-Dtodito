@@ -17,7 +17,7 @@ const galleryItems: GalleryItem[] = [
   { src: "/images/salchipapas.jpg", alt: "Salchipapas D'Toditos", label: "Salchipapas y bajones" },
   { src: "/images/fresas-con-crema.jpg", alt: "Fresas con Crema D'Toditos", label: "Fresas con crema artesanal" },
   { src: "/images/gohan-bowl.jpg", alt: "Gohan Bowl D'Toditos", label: "Gohan bowl con palta" },
-  { src: "/images/rolls-sin-arroz.jpg", alt: "Rolls Sin Arroz Keto", label: "Rolls keto sin arroz" },
+  { src: "/images/sushi-sin-arroz.jpg", alt: "Rolls Sin Arroz Keto", label: "Rolls keto sin arroz" },
   { src: "/images/promo-rolls.jpg", alt: "Promociones de Sushi", label: "Promos para compartir" },
   { src: "/images/tabla-sushi.jpg", alt: "Tablas de Sushi D'Toditos", label: "Tablas y eventos especiales" },
 ];

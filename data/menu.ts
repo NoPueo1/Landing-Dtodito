@@ -30,7 +30,7 @@ export const menuData: MenuCategory[] = [
     id: "promos",
     label: "Promos Sushi",
     conditions:
-      "Incluyen salsas. Tablas mixtas armadas con rolls calientes apanados en panko y rolls fríos envueltos.",
+      "Promociones mixtas surtidas con rolls calientes apanados en panko y rolls fríos envueltos. Incluyen soya. Para armar tus rolls 100% a elección, pide la Promo Especial (40 cortes).",
     items: [
       {
         name: "Promo Maki",
@@ -39,8 +39,8 @@ export const menuData: MenuCategory[] = [
         badge: "20 Pzas + Papas",
         price: 10990,
         rolls: [
-          { wrapping: "Panko frito", ingredients: "Pollo crocante, queso crema, cebollín" },
-          { wrapping: "Ciboulette / Sésamo", ingredients: "Kanikama, queso crema, palta" },
+          { wrapping: "10 Cortes Panko Frito", ingredients: "Pollo crocante, queso crema, cebollín (caliente)" },
+          { wrapping: "10 Cortes Sésamo / Ciboulette", ingredients: "Kanikama, queso crema, palta" },
         ],
         details: [
           { label: "Acompañamiento", text: "Porción de papas fritas crujientes incluidas" },
@@ -53,9 +53,9 @@ export const menuData: MenuCategory[] = [
         badge: "30 Cortes",
         price: 12490,
         rolls: [
-          { wrapping: "Panko frito", ingredients: "Pollo apanado, queso crema, palta" },
-          { wrapping: "Queso crema", ingredients: "Kanikama apanado, cebollín" },
-          { wrapping: "Ciboulette", ingredients: "Palmito, queso crema, choclo" },
+          { wrapping: "10 Cortes Panko Frito", ingredients: "Pollo apanado, queso crema, palta (caliente)" },
+          { wrapping: "10 Cortes Sésamo Tostado", ingredients: "Kanikama apanado, queso crema, cebollín" },
+          { wrapping: "10 Cortes Ciboulette", ingredients: "Palmito, queso crema, choclo" },
         ],
       },
       {
@@ -65,10 +65,9 @@ export const menuData: MenuCategory[] = [
         badge: "40 Cortes",
         price: 15490,
         rolls: [
-          { wrapping: "Panko frito", ingredients: "Pollo apanado, queso crema, pimentón" },
-          { wrapping: "Panko frito", ingredients: "Kanikama, queso crema, palta" },
-          { wrapping: "Palta fresca", ingredients: "Camarón apanado, queso crema" },
-          { wrapping: "Sésamo tostado", ingredients: "Pollo, queso crema, cebollín" },
+          { wrapping: "20 Cortes Panko Frito", ingredients: "Doble roll caliente con pollo apanado, queso crema y pimentón" },
+          { wrapping: "10 Cortes Palta Hass", ingredients: "Camarón apanado, queso crema, cebollín" },
+          { wrapping: "10 Cortes Sésamo Tostado", ingredients: "Kanikama, queso crema, palta" },
         ],
       },
       {
@@ -78,10 +77,10 @@ export const menuData: MenuCategory[] = [
         badge: "50 Pzas + Papas",
         price: 17990,
         rolls: [
-          { wrapping: "Panko frito (x2)", ingredients: "Pollo y camarón apanado con queso crema" },
-          { wrapping: "Palta fresca", ingredients: "Pollo apanado, queso crema, cebollín" },
-          { wrapping: "Queso crema", ingredients: "Kanikama apanado, palta" },
-          { wrapping: "Sésamo tostado", ingredients: "Palmito, queso, choclo" },
+          { wrapping: "20 Cortes Panko Frito", ingredients: "Pollo y camarón apanado con queso crema (calientes)" },
+          { wrapping: "10 Cortes Palta Hass", ingredients: "Pollo apanado, queso crema, cebollín" },
+          { wrapping: "10 Cortes Queso Crema", ingredients: "Kanikama apanado, palta" },
+          { wrapping: "10 Cortes Sésamo Tostado", ingredients: "Palmito, queso crema, choclo" },
         ],
         details: [
           { label: "Acompañamiento", text: "Porción de papas fritas crujientes incluidas" },
@@ -94,10 +93,10 @@ export const menuData: MenuCategory[] = [
         badge: "60 Cortes",
         price: 19990,
         rolls: [
-          { wrapping: "Panko frito (x3)", ingredients: "Pollo, camarón y kanikama apanados con queso" },
-          { wrapping: "Palta fresca", ingredients: "Pollo apanado, queso crema, cebollín" },
-          { wrapping: "Queso crema", ingredients: "Kanikama apanado, queso, palta" },
-          { wrapping: "Ciboulette", ingredients: "Palmito, queso, choclo" },
+          { wrapping: "20 Cortes Panko Frito", ingredients: "Pollo y kanikama apanados con queso crema (calientes)" },
+          { wrapping: "20 Cortes Sésamo Tostado", ingredients: "Pollo apanado, kanikama, queso crema y palta" },
+          { wrapping: "10 Cortes Palta Hass", ingredients: "Pollo apanado, queso crema, cebollín" },
+          { wrapping: "10 Cortes Ciboulette", ingredients: "Palmito, queso crema, choclo" },
         ],
       },
       {
@@ -107,10 +106,10 @@ export const menuData: MenuCategory[] = [
         badge: "70 Cortes",
         price: 21490,
         rolls: [
-          { wrapping: "Panko frito (x3)", ingredients: "Surtido caliente de pollo y camarón" },
-          { wrapping: "Palta fresca (x2)", ingredients: "Pollo y kanikama apanados, queso crema" },
-          { wrapping: "Queso crema", ingredients: "Camarón apanado, queso, cebollín" },
-          { wrapping: "Sésamo tostado", ingredients: "Vegetales frescos con queso crema" },
+          { wrapping: "30 Cortes Panko Frito", ingredients: "Triple roll caliente apanado con pollo y camarón" },
+          { wrapping: "20 Cortes Sésamo Tostado", ingredients: "Kanikama, pollo apanado, queso crema" },
+          { wrapping: "10 Cortes Palta Hass", ingredients: "Camarón apanado, queso crema, cebollín" },
+          { wrapping: "10 Cortes Queso Crema", ingredients: "Pollo apanado, palta fresca, queso" },
         ],
       },
       {
@@ -120,10 +119,10 @@ export const menuData: MenuCategory[] = [
         badge: "80 Cortes",
         price: 23490,
         rolls: [
-          { wrapping: "Panko crujiente (x4)", ingredients: "40 piezas fritas apanadas al momento" },
-          { wrapping: "Palta fresca (x2)", ingredients: "Pollo y camarón apanado, queso crema" },
-          { wrapping: "Queso crema", ingredients: "Kanikama apanado, palta, queso" },
-          { wrapping: "Ciboulette", ingredients: "Palmito, queso crema, choclo" },
+          { wrapping: "30 Cortes Panko Frito", ingredients: "Surtido caliente apanado en panko crocante" },
+          { wrapping: "20 Cortes Sésamo Tostado", ingredients: "Kanikama apanado, palta, queso crema" },
+          { wrapping: "15 Cortes Palta Hass", ingredients: "Pollo apanado, queso crema, cebollín" },
+          { wrapping: "15 Cortes Queso Crema", ingredients: "Pollo apanado, palta, queso" },
         ],
       },
       {
@@ -133,10 +132,10 @@ export const menuData: MenuCategory[] = [
         badge: "100 Cortes · Más Pedida",
         price: 29490,
         rolls: [
-          { wrapping: "Panko crujiente (x5)", ingredients: "50 piezas fritas apanadas al momento" },
-          { wrapping: "Palta fresca (x2)", ingredients: "20 piezas envueltas en palta hass" },
-          { wrapping: "Queso crema (x2)", ingredients: "20 piezas envueltas en queso crema" },
-          { wrapping: "Sésamo / Ciboulette", ingredients: "10 piezas clásicas tradicionales" },
+          { wrapping: "40 Cortes Panko Frito", ingredients: "4 rolls calientes apanados al momento en panko" },
+          { wrapping: "20 Cortes Palta Hass", ingredients: "2 rolls envueltos en palta con pollo y camarón" },
+          { wrapping: "20 Cortes Queso Crema", ingredients: "2 rolls envueltos en queso crema con kanikama" },
+          { wrapping: "20 Cortes Sésamo / Ciboulette", ingredients: "Surtido fresco con vegetales y queso crema" },
         ],
       },
       {
@@ -146,10 +145,10 @@ export const menuData: MenuCategory[] = [
         badge: "140 Cortes · Mega Tabla",
         price: 37490,
         rolls: [
-          { wrapping: "Panko crujiente (x7)", ingredients: "70 piezas fritas apanadas al momento" },
-          { wrapping: "Palta fresca (x3)", ingredients: "30 piezas envueltas en palta hass" },
-          { wrapping: "Queso crema (x2)", ingredients: "20 piezas envueltas en queso crema" },
-          { wrapping: "Ciboulette / Sésamo (x2)", ingredients: "20 piezas tradicionales surtidas" },
+          { wrapping: "60 Cortes Panko Frito", ingredients: "6 rolls calientes fritos en panko crujiente" },
+          { wrapping: "30 Cortes Palta Hass", ingredients: "3 rolls envueltos en palta con pollo y camarón" },
+          { wrapping: "30 Cortes Queso Crema", ingredients: "3 rolls envueltos en queso crema con kanikama" },
+          { wrapping: "20 Cortes Sésamo Tostado", ingredients: "2 rolls tradicionales con vegetales y queso" },
         ],
       },
     ],
@@ -158,19 +157,19 @@ export const menuData: MenuCategory[] = [
     id: "especiales",
     label: "Especiales & Tortas",
     conditions:
-      "Tortas de sushi y ramos de regalo se recomienda reservar con anticipación vía WhatsApp.",
+      "Tortas de sushi y ramos de regalo requieren armado previo. Reserva con anticipación vía WhatsApp.",
     items: [
       {
-        name: "Promo Especial (40 Piezas)",
+        name: "Promo Especial (40 Cortes)",
         pieces: 40,
         unit: "Cortes",
-        badge: "100% Personalizable",
+        badge: "100% a Tu Elección",
         price: 18990,
-        details: [
-          { label: "Proteína", text: "1 a elección (Pollo, Camarón o Kanikama)" },
-          { label: "Vegetal", text: "1 a elección (Palta, cebollín, morrón, palmito o choclo)" },
-          { label: "Relleno", text: "Abundante queso crema" },
-          { label: "Envoltura", text: "Panko frito, Nori, Queso, Palta, Sésamo o Ciboulette" },
+        rolls: [
+          { wrapping: "1 Proteína a elección", ingredients: "Pollo apanado, Camarón o Kanikama" },
+          { wrapping: "1 Vegetal a elección", ingredients: "Palta, cebollín, morrón, palmito, champiñón o choclo" },
+          { wrapping: "Queso crema incluido", ingredients: "Abundante relleno de queso crema suave" },
+          { wrapping: "Envoltura a elección", ingredients: "Panko frito, Nori, Queso crema, Palta, Sésamo o Ciboulette" },
         ],
       },
       {
@@ -180,9 +179,9 @@ export const menuData: MenuCategory[] = [
         badge: "Cumpleaños",
         price: 19990,
         details: [
-          { label: "Formato", text: "Torta montada de sushi con flor de palta central" },
-          { label: "Combinación", text: "Rolls calientes y fríos decorados para celebrar" },
-          { label: "Incluye", text: "Salsas y presentación especial" },
+          { label: "Presentación", text: "Torta redonda armada de sushi con flor de palta central" },
+          { label: "Surtido", text: "50 cortes mixtos con rolls fríos y calientes decorados" },
+          { label: "Incluye", text: "Salsas de soya y agridulce" },
         ],
       },
       {
@@ -192,9 +191,9 @@ export const menuData: MenuCategory[] = [
         badge: "70 Cortes",
         price: 24990,
         details: [
-          { label: "Formato", text: "Torta de sushi en niveles con abundante decoración" },
-          { label: "Ideal para", text: "Juntas familiares, cumpleaños y reuniones" },
-          { label: "Incluye", text: "Salsas de soya y agridulce" },
+          { label: "Presentación", text: "Torta de sushi en dos niveles con decoración festiva" },
+          { label: "Surtido", text: "70 cortes variados para juntas y celebraciones" },
+          { label: "Incluye", text: "Salsas y empaque de transporte" },
         ],
       },
       {
@@ -204,19 +203,19 @@ export const menuData: MenuCategory[] = [
         badge: "100 Cortes",
         price: 30990,
         details: [
-          { label: "Formato", text: "Mega torta de sushi monumental para fiestas" },
-          { label: "Variedad", text: "Gran surtido de rolls apanados y envueltos" },
-          { label: "Incluye", text: "Presentación de gala y salsas" },
+          { label: "Presentación", text: "Mega torta de sushi monumental para eventos grandes" },
+          { label: "Surtido", text: "100 cortes seleccionados de alta calidad" },
+          { label: "Incluye", text: "Presentación especial y salsas" },
         ],
       },
       {
-        name: "Ramo de Sushi D'Toditos",
-        badge: "Regalo Exclusivo",
+        name: "Ramo de Sushi para Regalo",
+        badge: "Regalo Sorpresa",
         price: 21990,
         details: [
-          { label: "Presentación", text: "Bouquet floral con rolls de sushi frescos y lazo" },
-          { label: "Ocasión", text: "Aniversarios, San Valentín y detalles sorpresa" },
-          { label: "Incluye", text: "Empaque especial para regalo y salsas" },
+          { label: "Presentación", text: "Bouquet armado con rolls de sushi frescos, envoltura floral y lazo" },
+          { label: "Ocasión", text: "Aniversarios, cumpleaños y regalos especiales" },
+          { label: "Incluye", text: "Salsas y dedicatoria personalizada" },
         ],
       },
     ],
@@ -225,65 +224,87 @@ export const menuData: MenuCategory[] = [
     id: "burgers",
     label: "Sushi Burgers",
     conditions:
-      "Todas nuestras sushi burgers llevan tapas de arroz apanado crujiente frito en panko.",
+      "Tapas elaboradas con arroz de sushi sazonado y apanado en panko crocante, fritas al instante.",
     items: [
+      {
+        name: "PPQ Burger",
+        badge: "Clásica Crocante",
+        price: 7000,
+        rolls: [
+          { wrapping: "Tapas apanadas", ingredients: "Doble tapa de arroz de sushi crocante en panko" },
+          { wrapping: "Proteína", ingredients: "Pollo apanado crocante" },
+          { wrapping: "Relleno fresco", ingredients: "Palta hass en láminas y queso crema" },
+        ],
+      },
       {
         name: "Sake Burger",
         badge: "Salmón Fresco",
         price: 8500,
-        details: [
-          { label: "Proteína", text: "Salmón fresco seleccionado" },
-          { label: "Relleno", text: "Palta hass cremosa y abundante queso crema" },
-          { label: "Tapas", text: "Arroz crujiente apanado dorado al momento" },
-        ],
-      },
-      {
-        name: "Sushi Burguer PPQ",
-        badge: "Clásica",
-        price: 7000,
-        details: [
-          { label: "Proteína", text: "Pechuga de pollo apanada crocante" },
-          { label: "Relleno", text: "Palta hass cremosa y queso crema" },
-          { label: "Tapas", text: "Arroz crujiente apanado en panko" },
+        rolls: [
+          { wrapping: "Tapas apanadas", ingredients: "Doble tapa de arroz de sushi crocante en panko" },
+          { wrapping: "Proteína", ingredients: "Salmón fresco en lonjas seleccionadas" },
+          { wrapping: "Relleno fresco", ingredients: "Palta hass cremosa y abundante queso crema" },
         ],
       },
       {
         name: "Sushi Burguer Sencilla",
         badge: "Favorita",
         price: 8000,
-        details: [
-          { label: "Proteína", text: "Pollo apanado crocante y kanikama" },
-          { label: "Relleno", text: "Cebollín fresco, palta hass y queso crema" },
-          { label: "Tapas", text: "Arroz crujiente apanado frito" },
+        rolls: [
+          { wrapping: "Tapas apanadas", ingredients: "Doble tapa de arroz de sushi frito en panko" },
+          { wrapping: "Proteínas", ingredients: "Pollo apanado crujiente y kanikama" },
+          { wrapping: "Relleno fresco", ingredients: "Cebollín fresco, palta hass y queso crema" },
         ],
       },
       {
         name: "Sushi Burguer Deluxe",
         badge: "Doble Proteína",
         price: 9000,
-        details: [
-          { label: "Proteína", text: "Pollo apanado crocante + camarones apanados" },
-          { label: "Relleno", text: "Palta hass cremosa y doble queso crema" },
-          { label: "Tapas", text: "Arroz crujiente dorado al instante" },
+        rolls: [
+          { wrapping: "Tapas apanadas", ingredients: "Doble tapa de arroz de sushi crujiente" },
+          { wrapping: "Proteínas", ingredients: "Pollo apanado + camarones apanados crocantes" },
+          { wrapping: "Relleno fresco", ingredients: "Palta hass en láminas y doble queso crema" },
         ],
       },
     ],
   },
   {
     id: "rolls-gohan",
-    label: "Handrolls & Gohan",
+    label: "Rolls & Gohan",
     conditions:
-      "Preparados en el día con ingredientes frescos. Opción de salmón por $1.000 adicional.",
+      "Ingredientes frescos del día. Opción de agregar salmón a cualquier roll o handroll por $1.000 adicional.",
     items: [
+      {
+        name: "Roll Clásico (10 Cortes)",
+        pieces: 10,
+        unit: "Cortes",
+        badge: "10 Cortes",
+        price: 5000,
+        rolls: [
+          { wrapping: "Envoltura a elección", ingredients: "Panko frito, Nori, Queso crema, Palta, Sésamo o Ciboulette" },
+          { wrapping: "Relleno", ingredients: "1 Proteína (Pollo, Camarón o Kanikama) + 1 Vegetal + Queso crema" },
+          { wrapping: "Opcional Salmón", ingredients: "Recargo de $1.000 por cambio a salmón fresco" },
+        ],
+      },
+      {
+        name: "Roll Sin Arroz (Keto)",
+        pieces: 10,
+        unit: "Cortes",
+        badge: "100% Relleno · Sin Arroz",
+        price: 8500,
+        rolls: [
+          { wrapping: "Envoltura a elección", ingredients: "Panko frito crujiente, Palta hass, Nori o Sésamo" },
+          { wrapping: "Relleno 100% sin arroz", ingredients: "1 Proteína + 2 Vegetales frescos + Queso crema" },
+          { wrapping: "Opcional Salmón", ingredients: "Recargo de $1.000 por cambio a salmón fresco" },
+        ],
+      },
       {
         name: "Handroll Crujiente",
         badge: "Al Paso",
         price: 3500,
-        details: [
-          { label: "Fórmula", text: "1 Proteína + 1 Vegetal + Queso crema" },
-          { label: "Proteínas", text: "Pollo, Camarón o Kanikama (Salmón +$1.000)" },
-          { label: "Vegetales", text: "Palta, cebollín, morrón, palmito, champiñón o choclo" },
-          { label: "Cocción", text: "Frito al instante en panko dorado" },
+        rolls: [
+          { wrapping: "Envoltura", ingredients: "Cono crujiente frito en panko con salsa de soya" },
+          { wrapping: "Relleno", ingredients: "1 Proteína (Pollo, Camarón o Kanikama) + 1 Vegetal + Queso crema" },
         ],
       },
       {
@@ -292,32 +313,9 @@ export const menuData: MenuCategory[] = [
         price: 7000,
         details: [
           { label: "Base", text: "Arroz sushi aliñado con sésamo" },
-          { label: "Relleno", text: "1 Proteína a elección + 2 Vegetales frescos + Queso crema" },
+          { label: "Proteína", text: "1 a elección (Pollo apanado, Camarón o Kanikama)" },
+          { label: "Vegetales", text: "2 vegetales frescos a elección + Queso crema" },
           { label: "Topping", text: "Sésamo tostado o ciboulette + flor de palta" },
-        ],
-      },
-      {
-        name: "Roll Clásico (10 Cortes)",
-        pieces: 10,
-        unit: "Cortes",
-        badge: "10 Cortes",
-        price: 5000,
-        details: [
-          { label: "Relleno", text: "1 Proteína + 1 Vegetal + Queso crema" },
-          { label: "Envoltura", text: "Panko, Nori, Queso, Ciboulette, Sésamo o Palta" },
-          { label: "Salmón", text: "Opcional con recargo de $1.000" },
-        ],
-      },
-      {
-        name: "Roll Sin Arroz (Keto)",
-        pieces: 10,
-        unit: "Cortes",
-        badge: "100% Relleno / Keto",
-        price: 8500,
-        details: [
-          { label: "Fórmula", text: "100% relleno sin arroz: 1 Proteína + 2 Vegetales + Queso crema" },
-          { label: "Envoltura", text: "Panko crujiente, Palta, Nori o Sésamo" },
-          { label: "Ideal para", text: "Quienes buscan bajo en carbohidratos" },
         ],
       },
     ],
@@ -326,7 +324,7 @@ export const menuData: MenuCategory[] = [
     id: "picoteos",
     label: "Salchipapas & Bajón",
     conditions:
-      "Porciones contundentes de papas doradas con aderezos incluidos.",
+      "Papas fritas crujientes doradas al momento con aderezos y salsas.",
     items: [
       {
         name: "Salchipapas Pequeña",
@@ -342,7 +340,7 @@ export const menuData: MenuCategory[] = [
         badge: "Para 2",
         price: 7000,
         details: [
-          { label: "Base", text: "Porción de papas fritas para dos personas" },
+          { label: "Base", text: "Porción de papas fritas para dos" },
           { label: "Topping", text: "Abundante vienesa dorada" },
         ],
       },
@@ -356,12 +354,21 @@ export const menuData: MenuCategory[] = [
         ],
       },
       {
-        name: "Salchipollo Familiar",
+        name: "Salchipollo Mediana",
         badge: "Pollo & Vienesa",
-        price: 11000,
+        price: 8000,
         details: [
           { label: "Base", text: "Papas fritas crujientes doradas" },
-          { label: "Proteínas", text: "Vienesas y trozos de pechuga de pollo dorado" },
+          { label: "Proteínas", text: "Vienesas y trozos de pechuga de pollo jugoso" },
+        ],
+      },
+      {
+        name: "Salchipollo Familiar",
+        badge: "Familiar",
+        price: 11000,
+        details: [
+          { label: "Base", text: "Bandeja familiar de papas fritas" },
+          { label: "Proteínas", text: "Vienesas doradas y abundante pollo a la plancha" },
         ],
       },
       {
@@ -369,8 +376,26 @@ export const menuData: MenuCategory[] = [
         badge: "Mega Bajón",
         price: 14490,
         details: [
-          { label: "Base", text: "Papas fritas doradas tamaño XL" },
-          { label: "Proteínas", text: "Doble pollo, vienesas y salsas de la casa" },
+          { label: "Base", text: "Papas fritas tamaño XL para grupos" },
+          { label: "Proteínas", text: "Doble porción de pollo, vienesas doradas y salsas" },
+        ],
+      },
+      {
+        name: "Pollipapas Mediana",
+        badge: "Solo Pollo",
+        price: 8500,
+        details: [
+          { label: "Base", text: "Papas fritas crujientes" },
+          { label: "Topping", text: "Trozos de pechuga de pollo dorada" },
+        ],
+      },
+      {
+        name: "Pollipapas Familiar",
+        badge: "Solo Pollo",
+        price: 12000,
+        details: [
+          { label: "Base", text: "Bandeja familiar de papas fritas" },
+          { label: "Topping", text: "Abundante pollo dorado a la plancha" },
         ],
       },
       {
@@ -378,8 +403,8 @@ export const menuData: MenuCategory[] = [
         badge: "Personal",
         price: 10990,
         details: [
-          { label: "Base", text: "Cama de papas fritas crujientes" },
-          { label: "Topping", text: "Carne vacuna, pollo, vienesa, cebolla caramelizada y huevo frito" },
+          { label: "Base", text: "Papas fritas crujientes" },
+          { label: "Topping", text: "Carne picada, pollo, vienesa, cebolla frita y huevo frito" },
         ],
       },
       {
@@ -388,7 +413,7 @@ export const menuData: MenuCategory[] = [
         price: 17990,
         details: [
           { label: "Base", text: "Bandeja gigante de papas fritas" },
-          { label: "Topping", text: "Carne vacuna, pollo, vienesa, cebolla caramelizada y huevos fritos" },
+          { label: "Topping", text: "Carne picada, pollo, vienesa, cebolla frita y huevos fritos" },
         ],
       },
       {
@@ -396,8 +421,8 @@ export const menuData: MenuCategory[] = [
         badge: "Porción Familiar",
         price: 7000,
         details: [
-          { label: "Base", text: "Bandeja grande de papas fritas doradas y crujientes" },
-          { label: "Acompañamiento", text: "Salsas a elección" },
+          { label: "Base", text: "Bandeja grande de papas fritas doradas" },
+          { label: "Acompañamiento", text: "Salsas de la casa" },
         ],
       },
     ],
@@ -406,16 +431,16 @@ export const menuData: MenuCategory[] = [
     id: "sandwiches",
     label: "Burgers & Arepas",
     conditions:
-      "Hamburguesas incluyen papas fritas crujientes.",
+      "Todas las hamburguesas incluyen porción de papas fritas crujientes.",
     items: [
       {
         name: "Hamburguesa Sencilla (+ Papas)",
-        badge: "Con Papas",
+        badge: "Con Papas Fritas",
         price: 7000,
         details: [
           { label: "Proteína", text: "Carne vacuna o pechuga de pollo" },
-          { label: "Ingredientes", text: "Queso fundido, lechuga fresca y tomate" },
-          { label: "Incluye", text: "Porción de papas fritas" },
+          { label: "Ingredientes", text: "Queso derretido, lechuga fresca y tomate" },
+          { label: "Acompañamiento", text: "Porción de papas fritas crujientes" },
         ],
       },
       {
@@ -423,18 +448,18 @@ export const menuData: MenuCategory[] = [
         badge: "Completa + Papas",
         price: 9000,
         details: [
-          { label: "Proteína", text: "Carne vacuna y pechuga de pollo" },
-          { label: "Ingredientes", text: "Queso fundido, huevo frito, lechuga y tomate" },
-          { label: "Incluye", text: "Porción de papas fritas" },
+          { label: "Proteínas", text: "Carne vacuna y pechuga de pollo" },
+          { label: "Ingredientes", text: "Queso derretido, huevo frito, lechuga y tomate" },
+          { label: "Acompañamiento", text: "Porción de papas fritas crujientes" },
         ],
       },
       {
         name: "Churrasco Italiano",
-        badge: "Clásico Chileno",
+        badge: "Clásico",
         price: 6490,
         details: [
-          { label: "Carne", text: "Filete de vacuno o pollo seleccionado" },
-          { label: "Ingredientes", text: "Palta hass cremosa, tomate y mayonesa" },
+          { label: "Proteína", text: "Vacuno o pechuga de pollo a la plancha" },
+          { label: "Ingredientes", text: "Palta hass cremosa, tomate fresco y mayonesa" },
         ],
       },
       {
@@ -442,16 +467,16 @@ export const menuData: MenuCategory[] = [
         badge: "Extra Queso",
         price: 6490,
         details: [
-          { label: "Carne", text: "Filete de vacuno o pollo" },
-          { label: "Ingredientes", text: "Doble porción de queso caliente derretido" },
+          { label: "Proteína", text: "Vacuno o pechuga de pollo a la plancha" },
+          { label: "Ingredientes", text: "Abundante queso caliente derretido" },
         ],
       },
       {
-        name: "Arepa Rellena",
-        badge: "A Elección",
+        name: "Arepas Rellenas",
+        badge: "Caseras",
         price: 5490,
         details: [
-          { label: "Opciones", text: "Carne y queso, Pollo y queso, Carne y palta o Pollo y palta" },
+          { label: "Variedades", text: "Carne y queso, Pollo y queso, Carne y palta o Pollo y palta" },
         ],
       },
     ],
@@ -460,11 +485,11 @@ export const menuData: MenuCategory[] = [
     id: "postres",
     label: "Postres",
     conditions:
-      "Elaborados artesanalmente con fruta fresca.",
+      "Elaborados artesanalmente con fruta fresca seleccionada.",
     items: [
       {
-        name: "Fresas con Crema D'Toditos",
-        badge: "Postre Estrella",
+        name: "Fresas con Crema Artesanal",
+        badge: "Postre Casero",
         price: 4500,
         details: [
           { label: "Contenido", text: "Frutillas frescas seleccionadas en capas" },
