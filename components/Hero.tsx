@@ -112,9 +112,12 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.6 }}
-          className="mt-6 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-400 text-sm"
+          className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2 px-5 py-2.5 rounded-full bg-white/[0.04] border border-white/10 text-gray-300 text-xs sm:text-sm text-center"
         >
-          🕐 {siteConfig.schedule}
+          <span className="text-[#d4a853] font-bold">🕐 Horario:</span>
+          <span>{siteConfig.scheduleWeekdays}</span>
+          <span className="hidden sm:inline text-gray-600">•</span>
+          <span>{siteConfig.scheduleWeekend}</span>
         </motion.div>
       </div>
     </section>

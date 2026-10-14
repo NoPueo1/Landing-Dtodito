@@ -97,9 +97,13 @@ export default function Footer() {
                   {siteConfig.location} · Delivery y Retiro (Ver en Maps)
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-gray-400 text-sm">
-                <Clock className="w-4 h-4 text-[#22c55e] shrink-0" />
-                {siteConfig.schedule}
+              <li className="flex items-start gap-3 text-gray-400 text-sm">
+                <Clock className="w-4 h-4 text-[#d4a853] shrink-0 mt-0.5" />
+                <div className="space-y-0.5">
+                  <p className="text-white font-medium">{siteConfig.scheduleWeekdays}</p>
+                  <p className="text-white font-medium">{siteConfig.scheduleWeekend}</p>
+                  <p className="text-xs text-gray-500">{siteConfig.scheduleNote}</p>
+                </div>
               </li>
             </ul>
           </div>

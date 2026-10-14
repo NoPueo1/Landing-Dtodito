@@ -42,7 +42,7 @@ export default function HowToOrder() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <p className="text-[#22c55e] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
+          <p className="text-[#d4a853] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
             Simple y rápido
           </p>
           <h2 className="text-4xl sm:text-5xl font-black mb-4">
@@ -61,14 +61,14 @@ export default function HowToOrder() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: i * 0.15, duration: 0.6 }}
-                className="relative text-center p-6 rounded-2xl bg-[#141414] border border-[#242424] hover:border-[#22c55e]/40 transition-colors"
+                className="relative text-center p-6 rounded-2xl bg-[#141414] border border-[#242424] hover:border-[#16a34a]/40 transition-colors"
               >
                 {/* Step number indicator */}
                 <div className="relative inline-block mb-5">
-                  <div className="w-16 h-16 rounded-full bg-[#1c1c1c] border border-[#2a2a2a] flex items-center justify-center text-[#22c55e] mx-auto shadow-inner">
+                  <div className="w-16 h-16 rounded-full bg-[#1c1c1c] border border-[#2a2a2a] flex items-center justify-center text-[#16a34a] mx-auto shadow-inner">
                     <Icon className="w-7 h-7" />
                   </div>
-                  <span className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-[#22c55e] text-black text-xs font-bold flex items-center justify-center shadow">
+                  <span className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-[#16a34a] text-white text-xs font-bold flex items-center justify-center shadow-md">
                     {i + 1}
                   </span>
                 </div>

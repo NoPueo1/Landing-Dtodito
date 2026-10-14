@@ -72,9 +72,9 @@ export default function CTASection() {
             href={siteConfig.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 bg-[#22c55e] hover:bg-[#16a34a] text-black font-extrabold text-lg px-10 py-4 rounded-full transition-all duration-300 shadow-xl shadow-green-900/30 hover:scale-105 active:scale-95"
+            className="flex items-center justify-center gap-3 bg-[#16a34a] hover:bg-[#15803d] text-white font-extrabold text-lg px-10 py-4 rounded-full transition-all duration-300 shadow-xl shadow-green-950/40 hover:scale-105 active:scale-95"
           >
-            <MessageCircle className="w-6 h-6 stroke-[2.5]" />
+            <MessageCircle className="w-6 h-6 stroke-[2.2]" />
             Pedir ahora
           </a>
           <a

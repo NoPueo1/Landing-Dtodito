@@ -16,9 +16,15 @@ export default function Cart() {
         `• ${i.name}${i.pieces ? ` (${i.pieces} ${i.unit ? i.unit.toLowerCase() : "cortes"})` : ""} x${i.quantity} — ${formatPrice(i.price * i.quantity)}`
     );
     const msg =
-      `Hola! Quiero hacer el siguiente pedido:\n\n` +
+      `Hola! Quiero hacer el siguiente pedido en D'Toditos Sushi:\n\n` +
       lines.join("\n") +
-      `\n\nTotal estimado: ${formatPrice(total)}`;
+      `\n\nTotal estimado: ${formatPrice(total)}\n\n` +
+      `📋 *Datos para la entrega:*\n` +
+      `• Nombre: \n` +
+      `• Pedido para: [Delivery / Retiro en local]\n` +
+      `• Dirección (si es delivery): \n` +
+      `• Método de pago: [Efectivo / Transferencia]\n` +
+      `• Elecciones / Comentarios (ingredientes o salsas): `;
     return encodeURIComponent(msg);
   };
 

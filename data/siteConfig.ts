@@ -11,6 +11,9 @@ export const siteConfig = {
   facebook: "https://www.facebook.com/profile.php?id=61564990175542",
   facebookHandle: "D'Todito Sushi",
   maps: "https://maps.app.goo.gl/Rw1xSS8uoQbnBnxSA",
-  schedule: "Delivery & Retiro en Quillón",
-  scheduleNote: "Horario exacto en Instagram",
+  url: "https://dtoditos-sushi.cl",
+  schedule: "Lun a Jue 14:00 - 21:30 | Vie a Dom 15:00 - 22:30",
+  scheduleWeekdays: "Lun a Jue: 14:00 a 21:30 hrs",
+  scheduleWeekend: "Vie a Dom: 15:00 a 22:30 hrs",
+  scheduleNote: "Delivery & Retiro en Quillón",
 };
