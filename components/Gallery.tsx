@@ -13,8 +13,8 @@ interface GalleryItem {
 
 const galleryItems: GalleryItem[] = [
   { src: "/images/ramo-sushi.jpg", alt: "Ramo de Sushi D'Toditos", label: "Ramo de sushi personalizado" },
-  { src: "/images/sushi-burger.jpg", alt: "Sushi Burger D'Toditos", label: "Sushi burger crujiente" },
-  { src: "/images/salchipapas.jpg", alt: "Salchipapas D'Toditos", label: "Salchipapas y bajones" },
+  { src: "/images/sushi-burger.jpg", alt: "Sushi Burger D'Toditos", label: "Sushi burger panko" },
+  { src: "/images/salchipapas.jpg", alt: "Salchipapas D'Toditos", label: "Salchipapas y acompañamientos" },
   { src: "/images/fresas-con-crema.jpg", alt: "Fresas con Crema D'Toditos", label: "Fresas con crema artesanal" },
   { src: "/images/gohan-bowl.jpg", alt: "Gohan Bowl D'Toditos", label: "Gohan bowl con palta" },
   { src: "/images/sushi-sin-arroz.jpg", alt: "Rolls Sin Arroz Keto", label: "Rolls keto sin arroz" },
@@ -37,7 +37,7 @@ export default function Gallery() {
           transition={{ duration: 0.7 }}
           className="text-center mb-14"
         >
-          <p className="text-[#22c55e] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
+          <p className="text-[#d4a853] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
             Visual
           </p>
           <h2 className="text-4xl sm:text-5xl font-black mb-4">La experiencia</h2>
@@ -55,7 +55,7 @@ export default function Gallery() {
             >
               <div
                 onClick={() => setSelected(i)}
-                className="relative rounded-2xl overflow-hidden aspect-square cursor-pointer group bg-[#141414] border border-[#242424] hover:border-[#22c55e]/50 transition-colors"
+                className="relative rounded-2xl overflow-hidden aspect-square cursor-pointer group bg-[#141414] border border-[#242424] hover:border-[#16a34a]/50 transition-colors"
               >
                 <Image
                   src={item.src}

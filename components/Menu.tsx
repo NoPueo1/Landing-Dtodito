@@ -39,19 +39,19 @@ export default function Menu() {
           transition={{ duration: 0.7 }}
           className="text-center mb-14"
         >
-          <p className="text-[#22c55e] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
+          <p className="text-[#d4a853] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
             Carta D&apos;Toditos
           </p>
           <h2 className="text-4xl sm:text-5xl font-black mb-4">El Menú</h2>
           <div className="neon-line w-24 mx-auto" />
         </motion.div>
 
-        {/* Category Tabs */}
+        {/* Category Tabs — Balanced, Wrapped, No Scrollbars */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-4xl mx-auto mb-12 px-2"
+          className="flex flex-wrap items-center justify-center gap-2.5 max-w-4xl mx-auto mb-12 px-2"
         >
           {menuData.map((cat) => (
             <button
@@ -59,8 +59,8 @@ export default function Menu() {
               onClick={() => setActive(cat.id)}
               className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold tracking-wide transition-all duration-300 border cursor-pointer ${
                 active === cat.id
-                  ? "bg-[#22c55e] border-[#22c55e] text-black shadow-lg shadow-green-900/30 scale-105"
-                  : "bg-[#141414] border-[#262626] text-gray-400 hover:border-[#22c55e]/50 hover:text-white hover:bg-[#1a1a1a]"
+                  ? "bg-[#16a34a] border-[#22c55e] text-white shadow-lg shadow-green-950/50 scale-105"
+                  : "bg-[#141414] border-[#262626] text-gray-400 hover:border-[#16a34a]/60 hover:text-white hover:bg-[#1a1a1a]"
               }`}
             >
               {cat.label}
@@ -87,13 +87,13 @@ export default function Menu() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.05, duration: 0.4 }}
-                    className="group relative rounded-2xl p-6 bg-[#141414] border border-[#242424] hover:border-[#22c55e]/50 transition-all duration-300 card-glow flex flex-col justify-between"
+                    className="group relative rounded-2xl p-6 bg-[#141414] border border-[#242424] hover:border-[#16a34a]/40 transition-all duration-300 card-glow flex flex-col justify-between"
                   >
                     <div>
-                      {/* Badge: Cortes, Unidades, o Formato custom */}
+                      {/* Warm Gold Badge: Cortes, Formato o Tipo — Exactly like Satori */}
                       {(item.badge || item.pieces) && (
                         <div className="mb-2">
-                          <span className="inline-block text-xs font-black px-2.5 py-1 rounded bg-[#22c55e]/15 text-[#4ade80] border border-[#22c55e]/30 tracking-wider uppercase">
+                          <span className="inline-block text-xs font-black px-2.5 py-1 rounded bg-[#d4a853]/15 text-[#e5be6b] border border-[#d4a853]/30 tracking-wider uppercase">
                             {item.badge ? item.badge : `${item.pieces} ${item.unit || "Cortes"}`}
                           </span>
                         </div>
@@ -104,7 +104,7 @@ export default function Menu() {
                         {item.name}
                       </h3>
 
-                      {/* Rolls List with clean bullet alignment */}
+                      {/* Rolls List: Bullet Verde + Label Dorado + Ingredientes Gris */}
                       {item.rolls && item.rolls.length > 0 ? (
                         <div className="space-y-2 mb-6 flex-1">
                           {item.rolls.map((roll, idx) => (
@@ -116,7 +116,7 @@ export default function Menu() {
                                 •
                               </span>
                               <div className="text-gray-300">
-                                <span className="text-[#4ade80] font-bold">
+                                <span className="text-[#d4a853] font-bold">
                                   {roll.wrapping}:
                                 </span>{" "}
                                 <span className="text-gray-400">
@@ -128,7 +128,7 @@ export default function Menu() {
                         </div>
                       ) : null}
 
-                      {/* Details List */}
+                      {/* Details List: Bullet Verde + Label Dorado + Texto Gris */}
                       {item.details && item.details.length > 0 ? (
                         <div className="space-y-2 mb-6 flex-1">
                           {item.details.map((detail, idx) => (
@@ -140,7 +140,7 @@ export default function Menu() {
                                 •
                               </span>
                               <div className="text-gray-300">
-                                <span className="text-[#4ade80] font-bold">
+                                <span className="text-[#d4a853] font-bold">
                                   {detail.label}:
                                 </span>{" "}
                                 <span className="text-gray-400">
@@ -169,7 +169,7 @@ export default function Menu() {
                         className={`flex items-center gap-2 font-bold px-4 py-2 text-sm rounded-full transition-all duration-300 shadow-md cursor-pointer ${
                           wasAdded
                             ? "bg-green-600/20 text-green-400 border border-green-600/40"
-                            : "bg-[#22c55e] hover:bg-[#16a34a] text-black shadow-green-950/40"
+                            : "bg-[#16a34a] hover:bg-[#15803d] text-white shadow-green-950/40"
                         }`}
                       >
                         {wasAdded ? (
@@ -179,7 +179,7 @@ export default function Menu() {
                           </>
                         ) : (
                           <>
-                            <ShoppingBag className="w-4 h-4 stroke-[2.5]" />
+                            <ShoppingBag className="w-4 h-4 stroke-[2.2]" />
                             Agregar
                           </>
                         )}
@@ -198,7 +198,7 @@ export default function Menu() {
                 transition={{ delay: 0.2 }}
                 className="max-w-2xl mx-auto flex items-center justify-center gap-2.5 p-3 rounded-xl bg-white/[0.03] border border-white/5 text-gray-400 text-xs sm:text-sm text-center"
               >
-                <Info className="w-4 h-4 text-[#22c55e] shrink-0" />
+                <Info className="w-4 h-4 text-[#d4a853] shrink-0" />
                 <span>{activeCategory.conditions}</span>
               </motion.div>
             )}
@@ -219,7 +219,7 @@ export default function Menu() {
             href={siteConfig.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#181818] hover:bg-[#222] border border-white/10 hover:border-[#22c55e]/50 text-white font-semibold text-sm px-6 py-3 rounded-full transition-all duration-300"
+            className="inline-flex items-center gap-2 bg-[#181818] hover:bg-[#222] border border-white/10 hover:border-[#16a34a]/50 text-white font-semibold text-sm px-6 py-3 rounded-full transition-all duration-300"
           >
             Hablar con nosotros por WhatsApp
           </a>

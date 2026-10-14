@@ -10,6 +10,7 @@ export const siteConfig = {
   instagramHandle: "@d.toditos_sushi",
   facebook: "https://www.facebook.com/profile.php?id=61564990175542",
   facebookHandle: "D'Todito Sushi",
+  maps: "https://maps.app.goo.gl/Rw1xSS8uoQbnBnxSA",
   schedule: "Delivery & Retiro en Quillón",
   scheduleNote: "Horario exacto en Instagram",
 };

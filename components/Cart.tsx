@@ -41,11 +41,11 @@ export default function Cart() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(true)}
-            className="fixed bottom-6 right-6 z-40 flex items-center gap-2 bg-[#22c55e] text-black font-bold px-5 py-3 rounded-full shadow-2xl shadow-green-900/40 cursor-pointer"
+            className="fixed bottom-6 right-6 z-40 flex items-center gap-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold px-5 py-3 rounded-full shadow-2xl shadow-green-950/50 cursor-pointer"
           >
-            <ShoppingBag className="w-5 h-5 stroke-[2.5]" />
+            <ShoppingBag className="w-5 h-5 stroke-[2.2]" />
             <span>Ver pedido</span>
-            <span className="bg-black text-[#22c55e] text-xs font-black w-5 h-5 rounded-full flex items-center justify-center">
+            <span className="bg-white text-[#16a34a] text-xs font-black w-5 h-5 rounded-full flex items-center justify-center">
               {count}
             </span>
           </motion.button>
@@ -113,7 +113,7 @@ export default function Cart() {
                             {item.name}
                           </p>
                           {item.pieces && (
-                            <p className="text-[#4ade80] text-xs font-semibold">
+                            <p className="text-[#d4a853] text-xs font-semibold">
                               {item.pieces} {item.unit ? item.unit.toLowerCase() : "cortes"}
                             </p>
                           )}
@@ -132,7 +132,7 @@ export default function Cart() {
                             onClick={() =>
                               updateQty(item.id, item.quantity - 1)
                             }
-                            className="w-7 h-7 rounded-full bg-[#2a2a2a] flex items-center justify-center hover:bg-[#22c55e] hover:text-black transition-colors cursor-pointer"
+                            className="w-7 h-7 rounded-full bg-[#2a2a2a] flex items-center justify-center hover:bg-[#16a34a] hover:text-white transition-colors cursor-pointer"
                           >
                             <Minus className="w-3 h-3" />
                           </button>
@@ -143,7 +143,7 @@ export default function Cart() {
                             onClick={() =>
                               updateQty(item.id, item.quantity + 1)
                             }
-                            className="w-7 h-7 rounded-full bg-[#2a2a2a] flex items-center justify-center hover:bg-[#22c55e] hover:text-black transition-colors cursor-pointer"
+                            className="w-7 h-7 rounded-full bg-[#2a2a2a] flex items-center justify-center hover:bg-[#16a34a] hover:text-white transition-colors cursor-pointer"
                           >
                             <Plus className="w-3 h-3" />
                           </button>
@@ -179,9 +179,9 @@ export default function Cart() {
                   {/* Confirm button */}
                   <button
                     onClick={handleConfirm}
-                    className="w-full flex items-center justify-center gap-3 bg-[#22c55e] hover:bg-[#16a34a] text-black font-black text-lg py-4 rounded-full transition-colors duration-300 shadow-lg shadow-green-900/30 cursor-pointer"
+                    className="w-full flex items-center justify-center gap-3 bg-[#16a34a] hover:bg-[#15803d] text-white font-black text-lg py-4 rounded-full transition-colors duration-300 shadow-lg shadow-green-950/40 cursor-pointer"
                   >
-                    <MessageCircle className="w-5 h-5 stroke-[2.5]" />
+                    <MessageCircle className="w-5 h-5 stroke-[2.2]" />
                     Confirmar pedido por WhatsApp
                   </button>
 

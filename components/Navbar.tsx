@@ -69,15 +69,15 @@ export default function Navbar() {
             {count > 0 ? (
               <button
                 onClick={() => setIsOpen(true)}
-                className="flex items-center gap-2 bg-[#22c55e] hover:bg-[#16a34a] text-black text-sm font-bold px-4 py-2 rounded-full transition-all duration-300 shadow-lg shadow-green-950/40 cursor-pointer"
+                className="flex items-center gap-2 bg-[#16a34a] hover:bg-[#15803d] text-white text-sm font-bold px-4 py-2 rounded-full transition-all duration-300 shadow-lg shadow-green-950/40 cursor-pointer"
               >
-                <ShoppingBag className="w-4 h-4 stroke-[2.5]" />
+                <ShoppingBag className="w-4 h-4 stroke-[2.2]" />
                 <span>Tu Pedido ({count})</span>
               </button>
             ) : (
               <a
                 href="#menu"
-                className="hidden sm:flex items-center gap-2 bg-[#22c55e] hover:bg-[#16a34a] text-black text-sm font-bold px-4 py-2 rounded-full transition-colors duration-300"
+                className="hidden sm:flex items-center gap-2 bg-[#16a34a] hover:bg-[#15803d] text-white text-sm font-bold px-4 py-2 rounded-full transition-colors duration-300 shadow-md shadow-green-950/30"
               >
                 Ver Menú
               </a>
@@ -123,16 +123,16 @@ export default function Navbar() {
                     setOpen(false);
                     setIsOpen(true);
                   }}
-                  className="flex items-center justify-center gap-2 bg-[#22c55e] text-black font-bold px-6 py-3 rounded-full cursor-pointer"
+                  className="flex items-center justify-center gap-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold px-6 py-3 rounded-full cursor-pointer shadow-lg shadow-green-950/40 transition-colors"
                 >
-                  <ShoppingBag className="w-5 h-5 stroke-[2.5]" />
+                  <ShoppingBag className="w-5 h-5 stroke-[2.2]" />
                   Ver mi Pedido ({count})
                 </button>
               ) : (
                 <a
                   href="#menu"
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-center gap-2 bg-[#22c55e] text-black font-bold px-6 py-3 rounded-full"
+                  className="flex items-center justify-center gap-2 bg-[#16a34a] hover:bg-[#15803d] text-white font-bold px-6 py-3 rounded-full shadow-lg shadow-green-950/40 transition-colors"
                 >
                   Ver Menú
                 </a>

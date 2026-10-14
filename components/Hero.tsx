@@ -48,7 +48,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-[#22c55e] text-sm tracking-[0.3em] uppercase font-semibold mb-4"
+          className="text-[#d4a853] text-sm tracking-[0.3em] uppercase font-semibold mb-4"
         >
           {siteConfig.tagline}
         </motion.p>
@@ -88,9 +88,9 @@ export default function Hero() {
             }
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            className="w-full sm:w-auto min-w-[220px] flex items-center justify-center gap-3 bg-[#22c55e] hover:bg-[#16a34a] text-black font-extrabold text-lg px-8 py-4 rounded-full shadow-lg shadow-green-900/40 transition-all duration-300 cursor-pointer"
+            className="w-full sm:w-auto min-w-[220px] flex items-center justify-center gap-3 bg-[#16a34a] hover:bg-[#15803d] text-white font-extrabold text-lg px-8 py-4 rounded-full shadow-lg shadow-green-950/50 transition-all duration-300 cursor-pointer"
           >
-            <UtensilsCrossed className="w-5 h-5 stroke-[2.5]" />
+            <UtensilsCrossed className="w-5 h-5 stroke-[2.2]" />
             Ver Menú
           </motion.button>
 

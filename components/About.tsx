@@ -38,7 +38,7 @@ export default function About() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
           </div>
           {/* Floating badge */}
-          <div className="absolute -bottom-4 -right-4 bg-[#22c55e] text-black font-extrabold px-6 py-3 rounded-xl shadow-xl text-sm border border-green-400/30">
+          <div className="absolute -bottom-4 -right-4 bg-[#16a34a] text-white font-extrabold px-6 py-3 rounded-xl shadow-xl shadow-green-950/40 text-sm border border-[#22c55e]/30">
             D&apos;Toditos Sushi
           </div>
         </motion.div>
@@ -50,7 +50,7 @@ export default function About() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         >
           {/* Section label */}
-          <p className="text-[#22c55e] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
+          <p className="text-[#d4a853] text-xs tracking-[0.3em] uppercase font-semibold mb-3">
             Nosotros
           </p>
 
@@ -81,10 +81,15 @@ export default function About() {
 
           {/* Quick info */}
           <div className="pt-4 border-t border-[#222] flex flex-wrap items-center gap-6 text-sm text-gray-400">
-            <div className="flex items-center gap-2">
+            <a
+              href={siteConfig.maps}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-white transition-colors"
+            >
               <MapPin className="w-4 h-4 text-[#22c55e] shrink-0" />
-              <span>Quillón · Delivery y Retiro</span>
-            </div>
+              <span>Quillón · Delivery y Retiro (Ver mapa)</span>
+            </a>
             <a
               href={siteConfig.instagram}
               target="_blank"

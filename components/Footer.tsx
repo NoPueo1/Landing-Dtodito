@@ -86,9 +86,16 @@ export default function Footer() {
                   {siteConfig.facebookHandle}
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-gray-400 text-sm">
-                <MapPin className="w-4 h-4 text-[#22c55e] shrink-0" />
-                {siteConfig.location} · Delivery y Retiro
+              <li>
+                <a
+                  href={siteConfig.maps}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm"
+                >
+                  <MapPin className="w-4 h-4 text-[#22c55e] shrink-0" />
+                  {siteConfig.location} · Delivery y Retiro (Ver en Maps)
+                </a>
               </li>
               <li className="flex items-center gap-3 text-gray-400 text-sm">
                 <Clock className="w-4 h-4 text-[#22c55e] shrink-0" />
