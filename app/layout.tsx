@@ -1,0 +1,49 @@
+import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
+import "./globals.css";
+import Providers from "./Providers";
+import { siteConfig } from "@/data/siteConfig";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: `${siteConfig.name} — ${siteConfig.tagline} | Delivery & Retiro`,
+  description:
+    "Las mejores promociones de sushi, sushi burgers, rolls sin arroz keto, tortas de sushi, salchipapas y comida rápida. Haz tu pedido directo por WhatsApp.",
+  keywords: [
+    "D'Toditos Sushi",
+    "delivery sushi",
+    "sushi rolls chile",
+    "sushi burger",
+    "promos sushi",
+    "salchipapas",
+    "tortas de sushi",
+  ],
+  openGraph: {
+    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    description: "Sushi fresco, rolls crujientes, bajón y promociones irresistibles. Pide directo por WhatsApp.",
+    locale: "es_CL",
+    type: "website",
+  },
+  icons: {
+    icon: "/images/logo.jpg",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="es" className={`${montserrat.variable}`}>
+      <body className="bg-[#0a0c0a] text-white antialiased">
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}
